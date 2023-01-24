@@ -1,0 +1,7 @@
+config {
+  type: "declaration",
+  database: "bigquery-public-data",
+  schema: "google_analytics_sample",
+  name: "ga_sessions_20170801",
+  description: "raw users table"
+}

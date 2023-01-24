@@ -1,0 +1,15 @@
+
+config {
+      type:"view",
+      schema:'staging',
+      description: 'A sample GA Sessions staging table'
+  }
+
+Select channelGrouping, Count(*) as numberofSessions from 
+  ${ref("sessions")}
+where device.operatingSystem = 'Windows'
+group by channelGrouping
+ 
+
+
+
