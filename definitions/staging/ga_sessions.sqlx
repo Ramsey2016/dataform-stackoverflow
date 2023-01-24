@@ -6,7 +6,7 @@ config {
   }
 
 Select channelGrouping, Count(*) as numberofSessions from 
-  ${ref("sessions")}
+  ${ref("ga_sessions_20170801")}
 where device.operatingSystem = 'Windows'
 group by channelGrouping
  
