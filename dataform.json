@@ -1,8 +1,8 @@
 {
-  "defaultSchema": "dataform",
-  "assertionSchema": "dataform_assertions",
+  "defaultSchema": "public-data",
+  "assertionSchema": "REPORTING",
   "warehouse": "bigquery",
-  "defaultDatabase": "bigquery-public-data",
+  "defaultDatabase": "demos-354115",
   "defaultLocation": "US"
 }
     
