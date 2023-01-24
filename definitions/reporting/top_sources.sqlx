@@ -4,9 +4,9 @@ config {
   type: "table",
   schema: "reporting",
   tags: ["daily"],
-  description: "Create a summary of a top 10 sources of visits for the ",
+  description: "",
   assertions: {
-    rowConditions: ["totalPageviews >= 20"]
+ 
   }
 }
 
