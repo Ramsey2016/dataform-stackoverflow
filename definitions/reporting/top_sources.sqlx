@@ -1,0 +1,16 @@
+
+
+config {
+  type: "table",
+  schema: "reporting",
+  tags: ["daily"],
+  description: "Create a summary of a top 10 sources of visits for the ",
+  assertions: {
+    rowConditions: ["totalPageviews >= 20"]
+  }
+}
+
+select
+*
+from
+  ${ref("ga_sessions")}  
