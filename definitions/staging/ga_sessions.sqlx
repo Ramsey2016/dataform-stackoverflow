@@ -5,11 +5,17 @@ config {
       description: 'A sample GA Sessions staging table'
   }
 
-Select channelGrouping, Count(*) as numberofSessions from 
-  ${ref("ga_sessions_20170801")}
-where device.operatingSystem = 'Windows'
-group by channelGrouping
- 
+SELECT 
+ Count(visitId) as Visitors,
+Count(totals.pageviews) as totalPageviews,
+SUM(totals.timeOnsite) as timeonSite,
+trafficSource.source
+FROM 
+ ${ref("ga_sessions_20170801")}
+WHERE
+  totals.timeOnSite IS NOT NULL 
+  and trafficSource.source != '(direct)'
+group by trafficSource.source
 
 
 
