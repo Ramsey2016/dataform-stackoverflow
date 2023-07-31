@@ -1,0 +1,11 @@
+config {
+  type: "table",
+  database: "demos-354115",
+  tags:["Tesla Cleansing"],
+  schema: "Trading",
+  name: "stock_tesla_cleansing",
+  description: "cleansing table"
+}
+
+select * from `demos-354115.Trading.stocks_tesla`
+${when(incremental(), `WHERE date > (SELECT MAX(date) FROM ${self()})`) }

@@ -6,7 +6,8 @@ config {
   tags: ["daily"],
   description: "",
   assertions: {
- 
+    uniqueKey: ["source"],
+    nonNull: ["Visitors", "source"]
   }
 }
 

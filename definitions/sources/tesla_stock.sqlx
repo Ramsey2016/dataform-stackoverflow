@@ -1,0 +1,9 @@
+config {
+  type: "table",
+  database: "demos-354115",
+  schema: "Trading",
+  name: "stock_tesla",
+  description: "cleansing table"
+}
+
+select * from `demos-354115.Trading.stocks_tesla`
