@@ -1,0 +1,5 @@
+config { type: "incremental" }
+SELECT current_date() AS snapshot_date, Date, Open,Low  FROM `demos-354115.Trading.stocks_tesla`
+${ when(incremental(), `WHERE date > (SELECT max(date) FROM ${self()})`) }
+
+ 

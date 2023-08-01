@@ -7,5 +7,5 @@ config {
   description: "cleansing table"
 }
 
-select * from `demos-354115.Trading.stocks_tesla`
+select * from `demos-354115.Trading.stock_tesla_cleansing`
 ${when(incremental(), `WHERE date > (SELECT MAX(date) FROM ${self()})`) }

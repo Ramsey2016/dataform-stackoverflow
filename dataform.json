@@ -1,5 +1,5 @@
 {
-  "defaultSchema": "public-data",
+  "defaultSchema": "Trading",
   "assertionSchema": "REPORTING",
   "warehouse": "bigquery",
   "defaultDatabase": "demos-354115",

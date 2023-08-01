@@ -3,7 +3,7 @@
 config {
   type: "table",
   schema: "REPORTING",
-  tags: ["daily"],
+  tags: ["topSourcesRefresh"],
   description: "",
   assertions: {
     uniqueKey: ["source"],
