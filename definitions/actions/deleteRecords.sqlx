@@ -1,2 +1,5 @@
-config { type: "operations"},tags: ["CUSTOM_TAG"]
-delete from datatable where Date = '2022-12-01 00:00:00 UTC' and Volume = '80046213'
+config {
+  type: "operations",
+  tags: ["deleteRecord"]
+}
+delete from `demos-354115.Trading.stocks_tesla` where Volume = 80046213
