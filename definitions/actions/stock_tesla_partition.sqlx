@@ -1,0 +1,8 @@
+config {
+    tags: ['createPartition'],
+  type: "table",
+  bigquery: {
+    partitionBy: "DATETIME_TRUNC(Date, HOUR)"
+  }
+}
+select * from `demos-354115.Trading.stocks_tesla`

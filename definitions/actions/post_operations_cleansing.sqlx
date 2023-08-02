@@ -1,0 +1,17 @@
+config {
+  type: "table",
+  tags:['postOperation']
+  
+  
+  }
+
+select * from `demos-354115.Trading.post_operations`
+
+pre_operations {
+ DELETE FROM `demos-354115.Trading.post_operations` WHERE Id > 9
+
+}
+
+post_operations {
+  ALTER TABLE Trading.post_operations_cleansing ADD COLUMN Grade INTEGER;
+}
