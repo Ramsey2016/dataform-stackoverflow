@@ -1,0 +1,3 @@
+config { type: "operations" }
+
+delete from datatable where Date = '2022-12-01 00:00:00 UTC' and Volume = '80046213'
