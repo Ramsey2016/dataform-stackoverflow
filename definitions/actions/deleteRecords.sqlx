@@ -2,4 +2,4 @@ config {
     tags: ['deleteRecords'],
   type: "operations",
 }
-delete from `demos-354115.Trading.stocks_tesla` where Volume = 80046213
+delete from `demos-354115.Trading.stocks_tesla` where Volume = 44525595

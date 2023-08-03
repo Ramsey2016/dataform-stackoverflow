@@ -1,0 +1,12 @@
+
+
+js {
+ const calc = 1;
+ function calculate(number){
+     return number*1;
+ }
+}
+
+select
+ ${calc} as CalcArg,
+ ${calculate(calc)} as Result

@@ -4,7 +4,7 @@ tags:["professionMapp"]
 }
 
 SELECT
-  ${mapping.professionGroup("Profession")} AS country_group,
+  ${mapping.professionGroup("Profession")} AS profession_group,
  Count(Id) as Count
 FROM `demos-354115.Trading.post_operations`
 GROUP BY 1
