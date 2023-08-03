@@ -1,0 +1,9 @@
+config { 
+    type: "incremental",
+    tags:['Merge'],
+     assertions: {
+    uniqueKey: ["Id"]}
+     }
+
+SELECT Id, Date, Name,Surname FROM Trading.post_operations
+${ when(incremental(), `WHERE Date > (SELECT CURRENT_DATE() FROM ${self()} limit 1)`) }

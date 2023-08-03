@@ -1,0 +1,8 @@
+config { 
+    type: "incremental",
+    tags:['incrementalRefresh']
+     }
+
+SELECT CURRENT_DATE() AS Date, event, clicks  FROM `demos-354115.Trading.events`
+
+${when(incremental(), `WHERE Date >= (SELECT MAX(Date) FROM ${self()})`) }

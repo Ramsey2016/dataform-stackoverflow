@@ -1,6 +1,6 @@
 {
   "defaultSchema": "Trading",
-  "assertionSchema": "REPORTING",
+  "assertionSchema": "Trading",
   "warehouse": "bigquery",
   "defaultDatabase": "demos-354115",
   "defaultLocation": "US"
