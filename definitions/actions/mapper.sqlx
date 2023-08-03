@@ -1,0 +1,10 @@
+config {
+type:"view",
+tags:["professionMapp"]
+}
+
+SELECT
+  ${mapping.professionGroup("Profession")} AS country_group,
+ Count(Id)
+FROM `demos-354115.Trading.post_operations`
+GROUP BY 1
