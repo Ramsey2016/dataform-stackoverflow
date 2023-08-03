@@ -2,6 +2,6 @@ function professionGroup(Profession) {
   return `CASE
           WHEN ${Profession} IN ("CE", "PA") THEN "Customer Engineering"
           ELSE "Other"
-          END`;
+          END 'Groupped Profession`;
 }
 module.exports = { professionGroup };
