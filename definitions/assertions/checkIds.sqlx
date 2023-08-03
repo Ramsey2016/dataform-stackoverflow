@@ -1,0 +1,12 @@
+config { 
+  type: "assertion",
+  tags:["customAssertion"]
+   }
+
+select
+  *
+from
+  ${ref("post_operations")}
+where
+  Id is null
+  
