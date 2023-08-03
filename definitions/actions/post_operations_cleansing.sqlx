@@ -13,5 +13,5 @@ pre_operations {
 }
 
 post_operations {
-  ALTER TABLE Trading.post_operations_cleansing ADD COLUMN Grade INTEGER;
+  ALTER TABLE Trading.post_operations_cleansing ADD COLUMN Pass INTEGER;
 }
